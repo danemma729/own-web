@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: helvatica, arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #212121;
+}
+
+/*ends base style*/
+header {
+    height: 100vh;
+    width: 100%;
+    background: url(image/p2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 35px;
+
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #fff;
+    transition: 3s all;
+}
+
+nav a:hover {
+    color: #10c9c3;
+
+}
+
+#header-text {
+    width: 500px;
+    position: absolute;
+    top: 500px;
+    right: 140px;
+    transform: translateY(-50%);
+
+
+}
+
+#header-text h1 {
+    font-size: 38px;
+    color: #191919;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#header-text p{
+    font-size: 18px;
+    color: #787878;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#header-text button {
+    outline: none;
+    background: #10c9c3;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    padding: 18px 45px;
+    cursor: pointer;
+    transition: background, color, border .3s;
+}
+
+#header-text button:hover{
+    background: transparent;
+    color: #fff;
+    border: 2px solid #10c9c3;
+}
+
+@media(max-width:768px) {
+    #navbar {
+        display: block;
+    }
+
+    #navbar logo {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    nav{
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px 10px;
+    }
+
+    #header-text {
+        right: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        background-position: -340px center;
+
+    }
+    #header-text {
+        width: 90%;
+        margin: auto;
+        top: 55%;
+        right: 0px;
+        left: 0%;
+    }
+
+    #header-text h1 {
+        font-size: 28px;
+    }
+    #header-text p {
+        font-size: 16px;
+    }
+
+    #header-text button {
+        padding: 10px 35px;
+    }
+}
+
+
+.fa-brands {
+    color: red;
+    position: relative;
+    bottom: 2px;
+    font-size: 33px;
+    cursor: pointer;
+
+}
